@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require ('mongoose');
 
 const userRoutes = require('./routes/user');
-const DB_URI = "mongo://mongo:27017/facturation"
-//mongodb://localhost:27017/facturation"
+ //const DB_URI = "mongo://mongo:27017/facturation"
+const DB_URI = "mongodb://localhost:27017/facturation"
 
 mongoose.connect(DB_URI , {useNewUrlParser:true ,useUnifiedTopology:true})
 .then(()=> console.log('Connection à MongoDB réussie'))
