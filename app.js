@@ -4,7 +4,7 @@ const mongoose = require ('mongoose');
 
 const userRoutes = require('./routes/user');
  //const DB_URI = "mongo://mongo:27017/facturation"
-const DB_URI = "mongodb://admin:admin@172.17.0.10:27017/facturation"
+const DB_URI = "mongodb://admin:admin@172.30.122.11:27017/facturation"
 
 mongoose.connect(DB_URI , {useNewUrlParser:true ,useUnifiedTopology:true})
 .then(()=> console.log('Connection à MongoDB réussie'))
